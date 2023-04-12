@@ -1,0 +1,633 @@
+﻿/* Styles des divisions principales de la page */
+
+#navigation {
+	position: relative;
+	float: right;
+	top : -2.75em;
+	right: 2em;
+	padding: 0em;
+	color: rgb(0,85,227);
+}
+#sommaire {
+	float: right;
+	margin-top : 20px;
+	margin-right: -20px;
+	padding: 0em;
+	color: rgb(0,85,227);
+}
+#sommaire ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+#sommaire li
+{
+	vertical-align: middle;
+	margin-left:2px;
+	float:left; /*pour IE*/
+}
+
+#sommaire ul li a
+{
+	vertical-align: middle;	
+	display:block;
+	float:left;   
+	width:80px; 
+	text-decoration:none;
+	text-align:center;
+	/*background-color:#6495ED;
+	color:black;
+	//padding:5px;
+	border-width:2px;
+	border-style:solid;
+	border-color:#DCDCDC #696969 #696969 #DCDCDC;  /*pour avoir un effet "outset" avec IE */
+}
+#sommaire ul li a:hover
+{
+	color: purple; /*rgb(0,85,227);*/
+	font-size: 16px;
+	/*background-color:#D3D3D3;
+	border-color: #696969 #DCDCDC #DCDCDC #696969;  */
+} 
+#sommaire ul li ul {
+ display:none;
+}
+#sommaire ul li:hover ul {
+ display:block;
+}
+#sommaire li:hover ul li {
+ float:none;
+} 
+#sommaire li ul {
+ position:absolute;
+ }
+ 
+#stats {
+  position: absolute;
+  top: 1em;
+  left: 0.5em;
+  background-color: #ffff00;
+  font-size:0.75em;
+}
+body{
+  	background-color: #77AADD;
+	//background-image: url(imgs/FONDGLOBAL.jpg);
+	background-repeat: repeat-x;
+  	margin:0% 0%;
+  	padding : 0.6em;
+  	font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
+  	font-size:0.8em;
+}
+#page {
+  	background-color:white;
+  	width : 65%;
+  	margin : auto ;
+  	border : 0.2em solid black;
+  	padding : 0.1em;
+}
+#entete{
+  	background-color:rgb(72,198,236);
+	color : #980101;
+	border: solid 0.1em #980101;
+	height: 100px;
+	padding: 0em;
+	border-collapse: separate;
+}
+#pied{
+  	clear : both;
+	border : solid 0.2em #980101;
+	margin-left : 18%;
+	margin-top : 1em;
+	padding:0.4em;
+	padding: 0.2em;
+	border-collapse: separate;
+}
+#menu{
+	position: relative;
+	float:right;
+	right: 0px;
+	margin-top : -240px;
+	margin-left: -10px;
+	padding: 0em;
+	background-color:transparent;
+	color: rgb(0,85,227);
+	width: 80px; //160px;
+}
+
+#contenu{
+	border: none;
+	padding: 1.1em;
+	background-color: white;
+	border-left :  groove 0.8em #980101;
+  	margin-top : 1.1em;
+	margin-left: 82px; //162px;   /*18%; */
+/* permet de fixer une hauteur mini sur les navigateurs modernes */
+  	min-height:27em;
+/* pour obtenir le même effet sur IE, sachant que si le contenu dépasse, il "poussera" la hauteur en ne respectant pas la norme. On se joue de ses lacunes */
+  	height:27em;
+}
+
+/* pour rétablir le mauvais effet sur les nav. modernes */
+html>body #contenu{
+  height:auto;
+}
+
+/* style à appliquer à la balise ul d'identifiant menulist */
+ul#menuList{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    width:98%;
+    font-size: 1em;
+}
+
+/* style à appliquer aux éléments de la balise ul d'identifiant menulist */
+ul#menuList li {
+    position:relative;
+    margin:0px;
+    padding:0px;
+}
+
+/* apparences des liens dans listes et sous-listes non numérotées */
+ul#menuList a {
+    color:rgb(0,85,227);
+    display:block;
+    text-decoration:none;
+    width:100%;
+}
+ul#menuList a:hover {
+    background: rgb(0,85,227);
+    color: white;
+}
+
+#entete #logo {
+  float : left;
+  width : 74px;
+  height : 100px;
+}
+
+#entete h1 {
+  margin-top :	50px;
+  margin-right:	20px;
+  font-size :	x-large;
+  text-align:	right;
+}
+
+#contenu pre {
+  width:95%;
+  overflow : scroll;
+}
+#contenu h2 {
+  font-size : large;
+  text-align:left;
+  margin:0;
+  margin-bottom:0.5em;
+}
+
+.logoValidW3c {
+  display: inline;
+}
+#libValidW3c{
+  display : inline;
+  vertical-align:middle;
+}
+
+/* Style des formulaires */
+.corpsForm {
+  border : solid 0.1em #000;
+  border-bottom-width:1px;
+  margin-bottom : 0em;
+  width : 95%;
+}
+.piedForm {
+  border-bottom-width : 0.1em;
+  border-left-width : 0.1em;
+  border-right-width : 0.1em;
+  border-top-width : 0em;
+  border-style : solid;
+  border-color : #000;
+  text-align:right ;
+  width : 95%;
+  margin-top:0em;
+}
+form {
+  margin-bottom:1em;  
+}
+.corpsForm legend {
+  font-weight:bold;
+  font-size:1.2em;
+}
+.corpsForm label{
+	float: left;
+	text-align:right;
+	width:33%;
+	margin: 0;
+	padding: 0 .5em 0 0;
+	line-height: 1.8;	
+}
+input, button, textarea, select{
+  font-family:"Trebuchet MS", sans-serif;
+  font-size : 1em;
+}
+
+input:focus{
+	background-color: #ECB2E4;
+}
+button{
+  width : 60px;
+  height : 30px;
+  text-align:center;
+  vertical-align:middle;
+}
+input:hover, textarea:hover, select:hover{
+  background-color : #FAFAE6;
+  cursor : pointer;
+}
+.controle {
+  width:75px;
+}
+.controleLong {
+  width:195px;
+}
+.stNb {
+  width:40px;
+  text-align:center;
+}
+
+.stNb a:link {
+	color: red;
+  	
+}
+
+.stTitre {
+  width:40px;
+  text-align:center;
+  font-weight: bold;
+}
+
+.stTitre2 {
+  width:80px;
+  text-align:center;
+  font-weight: bold;
+}
+
+/*  Le texte des messages d'erreur est de couleur rose sur fond ocre et de 
+taille de caractères légèrement supérieure à la normale */
+.erreur{ 
+   background-color:rgb(237,210,229);
+   color:rgb(203,28,128);
+   font-size:1.1em;
+   margin-left:200px;
+   width:75%;
+}
+.centre {
+  text-align:center;
+}
+
+.info {
+   background-color:rgb(178,207,81);
+   color : white;
+   font-size:1.1em;
+   width : 95%  
+}
+
+.encadre {
+  border : solid 0.1em #000;
+  width : 100%;
+}
+/* Style pour les liens de la page principale */
+#contenu .corpsTexte {
+  width:80%;
+  font-size:1.2em;
+}
+
+/* Style pour les liens de la page principale */
+#contenu a {
+   font-size : 1.1em;
+   color:gray;
+   text-decoration:none;
+}
+#contenu a:hover {
+   text-decoration:underline;
+   background-color : #D9BB7A;
+   font-size : 1em;
+}
+
+/* Style pour les parties importantes de la page principale */
+#contenu strong {
+  font-weight:bold;
+}
+
+/* Styles pour les tableaux de la page principale */
+#contenu table {
+   background-color:#FFF;
+   border : 0.1em solid #777777;
+   color:black;
+   margin-right : auto ;
+   margin-left:0.2em;
+   border-collapse : collapse;
+}
+
+/* Style pour les lignes d'en-tête des tableaux */
+#contenu th {  
+   background-color:#E9F1FE; //bleu clair ou bleu plus soutenu : #77AADD;
+   width:		130px;
+   height:		21px;
+   //text-align:	left;
+   vertical-align:top;
+   /*font-weight:bold;*/
+   border-bottom:0.1em solid #777777;
+   //font-size:1.1em;
+} 
+
+#contenu td {
+   border :1px solid #777777;
+   //font-size:1.1em;
+   }
+
+#contenu h3 {
+    font-size : 1.2em;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+fieldset{
+  border-radius : 12px;
+  border:2px solid ;
+  border-color: purple;
+}
+legend{
+  font-size: 20px;
+}
+
+table.listeLegere {
+    margin-bottom : 0.3em;
+}
+
+table.stats {
+  width:	80px; //150px;
+  border-collapse:collapse;
+}
+
+table.stats th {
+  border : 		dotted rgb(178,207,81) 0.1em;
+  background-color:#E9F1FE; //bleu clair
+  padding:		0em;
+  text-align:	center;
+  vertical-align : top;
+  witdh:		33%;
+}
+
+table.stats td {
+  border : 		dotted rgb(178,207,81) 0.1em;
+  padding:		0em;
+  text-align:	center;
+  vertical-align : top;
+  witdh:		33%;
+}
+
+/* Tableaux quadrillés utilisés pour l'affichage de listes avec contenu léger*/ 
+table.listeLegere th, table.listeLegere td {
+  border : dotted rgb(178,207,81) 0.1em;
+  padding:0.2em;
+  vertical-align : top;
+}
+
+table.listeLegere caption {
+  font-size : 1.1em;
+  text-align : left;
+  margin-bottom : 0.2em;
+}
+table.listeLegere td {
+  width:	100px;
+  vertical-align:top;
+  font-weight:normal;
+}
+
+#contenu h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1D2941;
+	text-decoration: none;
+	border : 1px solid #6988BE;
+	padding-left: 25px;
+	background-color: #E9F1FE;
+	height : 28px;
+}
+
+#contenu img {
+  height :	21px;
+  border-style:	none;
+  float :	left;
+}
+
+#contenu li img:hover {
+  height :	26px;
+}
+
+.lesOnglets 
+{
+	margin: 0;
+	padding:0 0 0 5px;
+}
+
+.unOnglet
+{
+	background-color:white;
+	margin-top:-1px;
+	padding:5px;
+	display:none;
+	border:1px solid #AAA;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	color:#555;
+	cursor: text;
+}
+.onglet
+{
+	display:inline-block;
+	margin:5px 2px 0 2px;
+	padding:5px 10px ;
+	border:1px solid #AAA;
+	border-bottom:none;
+	border-radius:5px 5px 0 0;
+	-webkit-border-radius:4px 4px 0 0;
+	-moz-border-radius:4px 4px 0 0;
+	color:#555;
+	cursor: pointer;
+	font-weight:bold;
+}
+.inactif
+{
+	background:#EEE;
+}
+.inactif:hover
+{
+	background:#AAA;
+}
+.actif
+{
+	background:white;
+	border-bottom:2px solid white;
+	padding-bottom:4px;
+	cursor:text;
+}
+.fdroite {
+	display: inline-block;
+	border-bottom: 7px solid #FFFFFF;
+	border-top: 7px solid #FFFFFF;
+	border-left: 10px solid #9743CC;
+}
+.fbas {
+	display: inline-block;
+	border-left: 7px solid #FFFFFF;
+	border-right: 7px solid #FFFFFF;
+	border-top: 10px solid #AABBCC;
+}
+.fgauche {
+	display: inline-block;
+	border-bottom: 7px solid #FFFFFF;
+	border-right: 10px solid #9743CC;
+	border-top: 7px solid #FFFFFF;
+}
+.fhaut {
+	display: inline-block;
+	border-bottom: 10px solid #AABBCC;
+	border-left: 7px solid #FFFFFF;
+	border-right: 7px solid #FFFFFF;
+}
+.boite {
+	border: 1px solid #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+.boite input[type="text"] {
+	height: 16px;
+	line-height: 16px;
+}
+
+.boite form {
+	margin: 0px;
+}
+
+#tableau th.semaine {
+	color: #666666;
+	text-align : center;
+	vertical-align: middle;
+	background-color: #fafae0;
+}
+
+#tableau td.semaine {
+	background-color: #000080;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+#tableau td.weekend {
+	background-color: #e4e8eb;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+#tableau td.today {
+	background-color: #ffe9e5;
+	color: #000080;
+}
+.tableau {
+	background-color: #ebeff2;
+	border-color: #3DA9C9;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tableau th {
+	font-size: 10px;
+	background-color: #3DA9C9;
+	color: #000080;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	vertical-align: middle;
+	border-collapse: separate;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+.tableau th div {
+	width: 25px;
+}
+
+.tableau td {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding: 1px;
+	margin: 1px;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+.tableau td.semaine {
+	background-color: #ffffff;
+	height: 30px;
+	text-align: center;
+	font-size: 10px;
+	width: 25px;
+	vertical-align: middle;
+}
+
+.tableau td.weekend {
+	background-color: #e4e8eb;
+	height: 30px;
+	text-align: center;
+	font-size: 10px;
+	width: 25px;
+	vertical-align: middle;
+}
+
+.tableau th.today {
+	background-color: #F98F7D;
+	color: #000080;
+}
+
+.tableau td.today {
+	background-color: #ffe9e5;
+	color: #000080;
+}
+#pompiers{
+	background-color: #ebeff2;
+	border-color: #3DA9C9;
+	border-width: 1px;
+	font-size: 12px;
+	border-style: solid;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+#pompiers th {
+	background-color: #3DA9C9;
+	color: #000080;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	vertical-align: middle;
+}
+
+
